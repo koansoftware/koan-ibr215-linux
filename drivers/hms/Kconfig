@@ -1,0 +1,6 @@
+menu "Hms Drivers"
+
+source "drivers/hms/3g/Kconfig"
+source "drivers/hms/wifi/Kconfig"
+
+endmenu

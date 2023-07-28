@@ -1,0 +1,7 @@
+config HMS_PWR_WIFI
+    tristate "HMS WIFI power control driver" 
+	default n
+	help
+	Say Y to get hms wifi power control.
+
+

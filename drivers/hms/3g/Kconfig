@@ -1,0 +1,7 @@
+config HMS_PWR_3G
+    tristate "HMS 3G power control driver" 
+	default n
+	help
+	Say Y to get hms 3g power control.
+
+
