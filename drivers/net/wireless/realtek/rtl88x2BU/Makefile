@@ -21,6 +21,11 @@ EXTRA_CFLAGS += -Wno-date-time	# Fix compile error && warning on gcc 4.9 and lat
 endif
 
 EXTRA_CFLAGS += -I$(src)/include
+# (KOAN) Workaround to solve several fatal errors (like drv_types.h: No such file or directory)
+EXTRA_CFLAGS += -I$(srctree)/$(src)/include
+EXTRA_CFLAGS += -I$(srctree)/$(src)/hal/phydm
+EXTRA_CFLAGS += -I$(srctree)/$(src)/core/crypto
+EXTRA_CFLAGS += -I$(srctree)/$(src)/platform
 
 EXTRA_LDFLAGS += --strip-debug
 
